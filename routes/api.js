@@ -94,7 +94,7 @@ function save2(object) {
   data.push(object);
   data = JSON.stringify(data);
 
-  fs.writeFile(filePath, data, (error) => {
+  fs.writeFile(filePath, data, function(error) {
     if(error) {
       console.log('Error writing: ' + filePath);
       deferred.reject();
