@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var cors = require('cors');
 
 var index = require('./routes/index');
 var api = require('./routes/api');
@@ -11,6 +12,8 @@ var mongo = require('mongodb');
 require('./model/db');
 
 var app = express();
+
+app.use(cors());
 
 app.set('port', (process.env.PORT || 80));
 

@@ -23,7 +23,8 @@
     "serve-favicon": "~2.3.0",
     "mongodb": "^2.1.2",
     "mongoose": "^4.3.3",
-    "q": "^1.4.1"
+    "q": "^1.4.1",
+    "cors": "^2.7.1"
   },
   "license": "private"
 }
