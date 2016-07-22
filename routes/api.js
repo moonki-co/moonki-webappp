@@ -88,7 +88,7 @@ function save(object){
 
 function save2(object) {
   var deferred = Q.defer();
-  var filePath = 'files/data.json';
+  var filePath = '/files/data.json';
   var data = getList3();
 
   data.push(object);
@@ -97,6 +97,7 @@ function save2(object) {
   fs.writeFile(filePath, data, function(error) {
     if(error) {
       console.log('Error writing: ' + filePath);
+      console.log(error);
       deferred.reject();
     }
     else {
