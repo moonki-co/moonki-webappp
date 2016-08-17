@@ -4,7 +4,6 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var cors = require('cors');
 
 var index = require('./routes/index');
 var api = require('./routes/api');
@@ -13,7 +12,12 @@ require('./model/db');
 
 var app = express();
 
-app.use(cors());
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, OPTIONS, DELETE, PATCH");
+  next();
+});
 
 app.set('port', (process.env.PORT || 80));
 

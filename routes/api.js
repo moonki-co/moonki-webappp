@@ -29,7 +29,25 @@ router.get('/save', function(req, res) {
           res.json(shortUrl);
         },
         function(){
-            res.json({'message': 'Error'});
+            res.writeHead('Content-Type','text/html; charset=utf-8')
+            res.end('adas');
+        }
+    );
+});
+
+router.post('/save', function(req, res) {
+    console.log(req.body);
+    var params = req.body;
+    params['time'] = (new Date());
+    var promise = save2(params);
+
+    promise.then(
+        function(shortUrl){
+          res.json(shortUrl);
+        },
+        function(){
+            res.writeHead('Content-Type','text/html; charset=utf-8')
+            res.end('adas');
         }
     );
 });
@@ -96,7 +114,7 @@ function save2(object) {
 
   fs.writeFile(filePath, data, function(error) {
     if(error) {
-      console.log('Error writing: ' + filePath);
+      //console.log('Error writing: ' + filePath);
       console.log(error);
       deferred.reject();
     }
