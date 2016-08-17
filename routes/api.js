@@ -114,7 +114,7 @@ function save(object){
 
 function save2(object) {
   var deferred = Q.defer();
-  var filePath = '/files/data.json';
+  var filePath = './files/data.json';
   var data = getList3();
 
   data.push(object);
