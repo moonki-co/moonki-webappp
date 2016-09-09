@@ -24,7 +24,8 @@
     "mongodb": "^2.1.2",
     "mongoose": "^4.3.3",
     "q": "^1.4.1",
-    "cors": "^2.7.1"
+    "cors": "^2.7.1",
+    "time": "^0.11.4"
   },
   "license": "private"
 }

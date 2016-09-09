@@ -4,6 +4,7 @@ var mongoose = require('mongoose');
 var Request = require('../model/request');
 var Q = require('q');
 var fs = require('fs');
+var time = require('time');
 
 /* GET home page. */
 router.get('/list', function(req, res) {
@@ -21,7 +22,7 @@ router.get('/list', function(req, res) {
 
 router.get('/save', function(req, res) {
     console.log(req.query);
-    req.query['time'] = (new Date());
+    req.query['time'] = getDate();
     var promise = save2(req.query);
 
     promise.then(
@@ -38,7 +39,7 @@ router.get('/save', function(req, res) {
 router.post('/save', function(req, res) {
     console.log(req.body);
     var params = req.body;
-    params['time'] = (new Date());
+    params['time'] = getDate();
     var promise = save2(params);
 
     promise.then(
@@ -51,6 +52,13 @@ router.post('/save', function(req, res) {
         }
     );
 });
+
+function getDate() {
+  var now = new time.Date();
+  now.setTimezone("America/Los_Angeles");
+
+  return now.toString();
+}
 
 function getList(){
 
