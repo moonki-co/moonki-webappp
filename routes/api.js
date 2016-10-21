@@ -21,7 +21,7 @@ router.get('/list', function(req, res) {
 });
 
 router.get('/save', function(req, res) {
-    console.log(req.query);
+    console.log(req);
     req.query['time'] = getDate();
     var promise = save2(req.query);
 
@@ -37,8 +37,9 @@ router.get('/save', function(req, res) {
 });
 
 router.post('/save', function(req, res) {
-    console.log(req.body);
     var params = req.body;
+    console.log(params);
+
     params['time'] = getDate();
     var promise = save2(params);
 
@@ -55,7 +56,7 @@ router.post('/save', function(req, res) {
 
 function getDate() {
   var now = new time.Date();
-  now.setTimezone("America/Los_Angeles");
+  now.setTimezone("America/Mexico_City");
 
   return now.toString();
 }
