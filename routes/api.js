@@ -118,6 +118,10 @@ function save2(object) {
   var filePath = './files/data.json';
   var data = getList3();
 
+  while(data.length >= 15) {
+    data.shift();
+  }
+
   data.push(object);
   data = JSON.stringify(data);
 
