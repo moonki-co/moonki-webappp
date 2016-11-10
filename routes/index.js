@@ -11,4 +11,8 @@ router.get('/health', function (req, res) {
   res.send({ server: 'Moonki Webapp', status: 'true', vir: '0.1', ip: req.connection.remoteAddress });
 });
 
+router.get('/myv', function(req, res, next) {
+  res.render('template');
+});
+
 module.exports = router;
