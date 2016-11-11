@@ -16,9 +16,7 @@
 <!-- <iframe src="https://embed.spotify.com/?uri=spotify:track:66L8xnafQAqfAAmaNp9kbY" width="300" height="380" frameborder="0" allowtransparency="true"></iframe> -->
 
   <body>
-
     <div id="site_content" style="display:none;">
-
       <!-- header -->
       <header class="main__header">
         <div class="container">
@@ -44,7 +42,7 @@
             <div class="item active"> <img data-src="images/mine/asset1.png" src="images/mine/asset1.png">
               <div class="container">
                 <div class="carousel-caption">
-                  <h1>Que afortunado soy de haberte conocido, puedo decir que son un chilango con suerte.</h1>
+                  <h1>Que afortunado soy de haberte conocido, soy un chilango con suerte.</h1>
                   <p>
                     Sin duda la mejor decisión que he tomado en estos años fue mudarme a Guadalajara, entrar a Wizeline y dar la primera charla de ingeniería a esa hermosa mujer llamada Valeria Anzaldo.
                     <br/>
@@ -79,7 +77,6 @@
 
       <!-- container -->
       <section class="main__middle__container">
-
         <!-- instructions -->
         <div class="row text-center no-margin nothing green__line">
           <div class="container headings">
@@ -90,7 +87,7 @@
               <br/>
               ¿Quieres verla completa?
               <br/>
-              (te tomará como 25 min)
+              (te tomará como 20 min)
             </p>
             <p>
               <a id="vamoaver" class="btn btn-info btn-lg" href="#main_container">Seguro vamos :D</a>
@@ -105,7 +102,6 @@
           <!-- presentation -->
           <div class="row no-margin grey-info-block text-center">
             <div class="container">
-
               <!-- bienvenida -->
               <h3 style="margin-bottom:30px;">
                 Ok vamos a comenzar, lo que te escribo aquí expresa lo que siento por ti, lo que hemos vivido, lo que quisiera que viviéramos y lo que pienso.
@@ -115,6 +111,7 @@
                 <br/>
                 (no te fijes tanto en mi horrible gesto de la foto de abajo :p)
               </p>
+              <!--/ bienvenida -->
 
               <!-- primer explicacion -->
               <div class="col-md-12"> <img src="images/mine/asset3.png" alt="img" class="img-rounded img-responsive">
@@ -123,6 +120,7 @@
                   Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
                 </p>
               </div>
+              <!--/ primer explicacion -->
 
 
               <!-- fotos -->
@@ -155,142 +153,205 @@
                   <img src="images/mine/gif2.gif" alt="pic" class="img-responsive">
                 </div>
               </div>
+              <!--/ fotos -->
+
+              <!-- next step -->
+              <p>
+                <a class="btn btn-info btn-lg btn-info-2" onclick="goToNextStep('step2');">¿Qué más hay?</a>
+              </p>
+              <!--/ next step -->
             </div>
           </div>
           <!--/ presentation -->
 
-          <!-- que piensan -->
-          <div class="row text-center no-margin nothing green__line testimonials">
-            <div class="container headings">
-              <h2 class="page_title">¿Y qué dice la gente?</h2>
-              <p class="small-paragraph"><small>Una relación es de dos, pero siempre es curiso saber que piensan los demás.</small></p>
-              <div id="myCarousel2" class="carousel slide carousel-fade" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel2" data-slide-to="1"></li>
-                  <li data-target="#myCarousel2" data-slide-to="2"></li>
-                  <li data-target="#myCarousel2" data-slide-to="3"></li>
-                  <li data-target="#myCarousel2" data-slide-to="4"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <p class="small-paragraph">
-                      "I want people to be this happy #IWPTBTH"
-                      <br/> 
-                      <br/>
-                      Con eso comenzó todo, si eso dijo en ese momento, no se imagina lo felices que podríamos ser en el futuro.
-                      <br/>
-                      Facebook source: <a href="http://bit.ly/iwptbth" target="_blank" style="color: #fff; text-decoration: underline;">http://bit.ly/iwptbth</a>
-                    </p>
-                    <p class="small-paragraph"><small>Vidal Gonzalez, Our Boss</small></p>
-                  </div>
-                  <div class="item">
-                    <p class="small-paragraph">
-                      "- Si mamá pues se llama Valeria y es bien fresa"<br/>
-                      "- Que bueno hijo, me da gusto verte feliz"<br/>
-                      "- Si pues no la podré llevar a tomar caguamas por ser fresa, pero está bien"<br/>
-                      "- Jajaja Mauricio cállate" 
-                    <p class="small-paragraph"><small>Antonia Guzmán, Mi Mamá</small></p>
-                  </div>
-                  <div class="item">
-                    <p class="small-paragraph">
-                      "Mauricio debes cuidar a Valeria, ella es una chica bien, de familia, debes ser un caballero y estar siempre atento con ella, nos gusta mucho para ti, ¡ya quiero que se casen!"
-                      <br/>
-                      <br/>
-                      PRESIÓN, PRESIÓN, PRESIÓN
-                    <p class="small-paragraph"><small>Miryam y Adriana, Roomies</small></p>
-                  </div>
-                  <div class="item">
-                    <p class="small-paragraph">
-                      "¡BESO! ¡BESO! ¡BESO! ¡BESO! ¡BESO! ¡BESO!"
-                    <p class="small-paragraph"><small>Claire, Caro, Areli, Edith, Wize Girls</small></p>
-                  </div>
-                  <div class="item">
-                    <p class="small-paragraph">
-                      "¡Quisiera tener una novia como tú y ser tan felices como ustedes para ir a eventos de la empresa con ella!"
-                      <br/>
-                      <br/>
-                      Tiene razón casi en todo, casi..
-                    </p>
-                    <p class="small-paragraph"><small>Alejandro Abarca, El Kinduff</small></p>
+          <!-- step2 -->
+          <div id="step2" style="display:none; padding-bottom: 75px;">
+            <!-- que piensan -->
+            <div id="que_piensan" class="row text-center no-margin nothing green__line testimonials">
+              <div class="container headings">
+                <h2 class="page_title">¿Y qué dice la gente?</h2>
+                <p class="small-paragraph"><small>Una relación es de dos, pero siempre es curiso saber que piensan los demás.</small></p>
+                <div id="myCarousel2" class="carousel slide carousel-fade" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel2" data-slide-to="1"></li>
+                    <li data-target="#myCarousel2" data-slide-to="2"></li>
+                    <li data-target="#myCarousel2" data-slide-to="3"></li>
+                    <li data-target="#myCarousel2" data-slide-to="4"></li>
+                  </ol>
+                  <div class="carousel-inner" style="min-height: 210px;">
+                    <div class="item active">
+                      <p class="small-paragraph">
+                        "I want people to be this happy #IWPTBTH"
+                        <br/> 
+                        <br/>
+                        Con eso comenzó todo, si eso dijo en ese momento, no se imagina lo felices que podríamos ser en el futuro.
+                        <br/>
+                        Facebook source: <a href="http://bit.ly/iwptbth" target="_blank" style="color: #fff; text-decoration: underline;">http://bit.ly/iwptbth</a>
+                      </p>
+                      <p class="small-paragraph"><small>Vidal Gonzalez, Our Boss</small></p>
+                    </div>
+                    <div class="item">
+                      <p class="small-paragraph">
+                        "- Si mamá pues se llama Valeria y es bien fresa"<br/>
+                        "- Que bueno hijo, me da gusto verte feliz"<br/>
+                        "- Si pues no la podré llevar a tomar caguamas por ser fresa, pero está bien"<br/>
+                        "- Jajaja Mauricio cállate" 
+                      <p class="small-paragraph"><small>Antonia Guzmán, Mi Mamá</small></p>
+                    </div>
+                    <div class="item">
+                      <p class="small-paragraph">
+                        "Mauricio debes cuidar a Valeria, ella es una chica bien, de familia, debes ser un caballero y estar siempre atento con ella, nos gusta mucho para ti, ¡ya quiero que se casen!"
+                        <br/>
+                        <br/>
+                        PRESIÓN, PRESIÓN, PRESIÓN
+                      <p class="small-paragraph"><small>Miryam y Adriana, Roomies</small></p>
+                    </div>
+                    <div class="item">
+                      <p class="small-paragraph">
+                        "¡BESO! ¡BESO! ¡BESO! ¡BESO! ¡BESO! ¡BESO!"
+                      <p class="small-paragraph"><small>Claire, Caro, Areli, Edith, Wize Girls</small></p>
+                    </div>
+                    <div class="item">
+                      <p class="small-paragraph">
+                        "¡Quisiera tener una novia como tú y ser tan felices como ustedes para ir a eventos de la empresa con ella!"
+                        <br/>
+                        <br/>
+                        Tiene razón casi en todo, casi..
+                      </p>
+                      <p class="small-paragraph"><small>Alejandro Abarca, El Kinduff</small></p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!--/ que piensan -->
+            <!--/ que piensan -->
 
-          <!-- us -->
-          <section class="recent-posts">
-            <div class="container">
-              <h3 style="margin-bottom:30px; padding-top: 40px; text-align: center;">
-                Nosotros: que hacemos y que hay en común
-              </h3>
+            <!-- us -->
+            <section class="recent-posts">
+              <div class="container">
+                <h3 style="margin-bottom:30px; padding-top: 40px; text-align: center;">
+                  Nosotros: que hacemos y que hay en común
+                </h3>
 
-              <div class="row no_padding nothing">
-                <div class="col-md-9">
-                  <article> 
-                    <img src="images/mine/happy_people.gif" alt="pic1" class="pull-left img-responsive">
+                <div class="row no_padding nothing" style="padding-bottom:0px;">
+                  <div class="col-md-9">
+                    <article> 
+                      <img src="images/mine/happy_people.gif" alt="pic1" class="pull-left img-responsive">
 
-                    <div class="text">
-                      <h3>Lorem ipsum dolor sit consectetuer adipiscing elit. Donec odio.</h3>
-                      <p class="small-paragraph">Lorem ipsum dolor sit amet</p>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Nullam malesuada erat ut turpis.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+                      <div class="text">
+                        <h3>Lorem ipsum dolor sit consectetuer adipiscing elit. Donec odio.</h3>
+                        <p class="small-paragraph">Lorem ipsum dolor sit amet</p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Nullam malesuada erat ut turpis.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus, facilisis luctus, metus. , facilisis luctus, metus.
+                          <br/>
+                          <br/>
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Nullam malesuada erat ut turpis.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus, facilisis luctus, metus. , facilisis luctus, metus.
+                          <!-- 
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Nullam malesuada erat ut turpis.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus, facilisis luctus, metus. , facilisis luctus, metus.
+                          -->
+                        </p>
+                      </div>
+
+                      <div class="clearfix"></div>
+                    </article>
+
+                    <article> 
+                      <img src="images/mine/love.gif" alt="pic2" class="pull-left img-responsive">
+                      <div class="text">
+                        <h3>Lorem ipsum dolor sit consectetuer adipiscing elit. Donec odio.</h3>
+                        <p class="small-paragraph">Lorem ipsum dolor sit amet</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Nullam malesuada erat ut turpis.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+                      </div>
+                      <div class="clearfix"></div>
+                    </article>
+                  </div>
+                  <!-- columna izquierda -->
+                  <div class="col-md-3">
+                    <div class="icon-item"> <img src="images/mine/left3.png" alt="small-post-img" class="img-responsive">
+                      <h4>Metas, ideales, inteligencia</h4>
+                      <p class="small-paragraph">Estar con alguien inteligente hace crecer a ambos. (la foto es de cuando gane un hackathon)</p>
                     </div>
-
-                    <div class="clearfix"></div>
-                  </article>
-
-                  <article> 
-                    <img src="images/mine/love.gif" alt="pic2" class="pull-left img-responsive">
-                    <div class="text">
-                      <h3>Lorem ipsum dolor sit consectetuer adipiscing elit. Donec odio.</h3>
-                      <p class="small-paragraph">Lorem ipsum dolor sit amet</p>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Nullam malesuada erat ut turpis.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+                    <div class="icon-item"> <img src="images/mine/left4.png" alt="small-post-img" class="img-responsive" style="margin-top:30px;">
+                      <h4>Risas, juegos y tonterias, siempre sonriendo</h4>
+                      <p class="small-paragraph">¿Sabías que te ver hermosa cuando sonries? bueno, ahora lo sabes <3</p>
                     </div>
-                    <div class="clearfix"></div>
-                  </article>
-                </div>
-                <!-- columna izquierda -->
-                <div class="col-md-3">
-                  <div class="icon-item"> <img src="images/mine/left3.png" alt="small-post-img" class="img-responsive">
-                    <h4><a href="#">Metas, ideales, inteligencia</a></h4>
-                    <p class="small-paragraph">Estar con alguien inteligente hace crecer a ambos. (la foto es de cuando gane un hackathon)</p>
-                  </div>
-                  <div class="icon-item"> <img src="images/mine/left4.png" alt="small-post-img" class="img-responsive" style="margin-top:30px;">
-                    <h4><a href="#">Risas, juegos y tonterias, siempre sonriendo</a></h4>
-                    <p class="small-paragraph">¿Sabías que te ver hermosa cuando sonries? bueno, ahora lo sabes <3</p>
-                  </div>
-                  <div class="icon-item"> <img src="images/mine/left1.png" alt="small-post-img" class="img-responsive">
-                    <h4><a href="#">Compartimos sentimientos por el fútbol</a></h4>
-                    <p class="small-paragraph">¡Vamos Chivas! ¡Hala Madrid!</p>
-                  </div>
-                  <div class="icon-item"> <img src="images/mine/left2.png" alt="small-post-img" class="img-responsive" style="margin-top:30px;">
-                    <h4><a href="#">¡Nuestro gusto por la carne seca y la birria!</a></h4>
-                    <p class="small-paragraph">Se me hizo agua la bocaaaaaaa, tenemos que ir por birria y carne seca, ¡a la de YA!</p>
+                    <div class="icon-item"> <img src="images/mine/left1.png" alt="small-post-img" class="img-responsive">
+                      <h4>Compartimos sentimientos por el fútbol</h4>
+                      <p class="small-paragraph">¡Vamos Chivas! ¡Hala Madrid!</p>
+                    </div>
+                    <div class="icon-item"> <img src="images/mine/left2.png" alt="small-post-img" class="img-responsive" style="margin-top:30px;">
+                      <h4>¡Nuestro gusto por la carne seca y la birria!</h4>
+                      <p class="small-paragraph">Se me hizo agua la bocaaaaaaa, tenemos que ir por birria y carne seca, ¡a la de YA!</p>
+                    </div>
                   </div>
                 </div>
               </div>
+            </section>
+            <!--/ us -->
+
+            <!-- music -->
+            <div class="row  three__blocks no_padding no-margin">
+              <div class="container">
+                <div class="col-md-4">
+                  <h3><small><a href="#">Easy to customize</a></small></h3>
+                  <iframe width="300" height="190"
+                    src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                  </iframe>
+                  <div class="clr"></div>
+                  <p style="margin-top:15px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. </p>
+                </div>
+                <div class="col-md-4 middle">
+                  <h3><small><a href="#">Ticket system support</a></small></h3>
+                  <iframe width="300" height="190"
+                    src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                  </iframe>
+                  <div class="clr"></div>
+                  <p style="margin-top:15px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. </p>
+                </div>
+                <div class="col-md-4">
+                  <h3><small><a href="#">Great performance</a></small></h3>
+                  <iframe width="300" height="190"
+                    src="https://www.youtube.com/embed/XGSy3_Czz8k">
+                  </iframe>
+                  <div class="clr"></div>
+                  <p style="margin-top:15px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. </p>
+                </div>
+              </div>
             </div>
-          </section>
-          <!--/ us -->
+            <!--/ music -->
 
-          <!-- now what? -->
-          <div class="row heading__block services text-center no-margin nothing">
-            <h2>¿Y AHORA, QUÉ SIGUE, QUÉ FALTA?</h2>
-            <p class="small-paragraph">Esto es una gran carretera, tenemos une excelente auto y faltan muchas millas por recorrer.</p>
+            <!-- next step -->
+            <center>
+              <p>
+                <a class="btn btn-info btn-lg btn-info-2" onclick="goToNextStep('step3');">Next step :)</a>
+              </p>
+            </center>
+            <!-- next step -->
           </div>
-          <!--/ now what? -->
+          <!--/ step2 -->
 
-          <!-- final -->
-          <div class="row no-margin grey-info-block text-center" style="margin-top:40px;">
-            <img src="images/mine/final.png" class="img-rounded img-responsive" style="max-width:400px;">
-            <p class="big-paragraph">
-              Y PUES AQUI TE LE DECLARAS
-            </p>
+          <!-- step3 -->
+          <div id="step3" style="display:none;">
+            <!-- now what? -->
+            <div id="now_what" class="row heading__block services text-center no-margin nothing">
+              <h2>So... now what? what's missing? what's next?</h2>
+              <p class="small-paragraph">
+                This is a long highway, we're an awesome car and we still have a lot of miles to drive
+              </p>
+            </div>
+            <!--/ now what? -->
+
+            <!-- final -->
+            <div class="row no-margin grey-info-block text-center" style="margin-top:40px;">
+              <img src="images/mine/final.png" class="img-rounded img-responsive" style="max-width:400px;">
+              <p class="big-paragraph">
+                Y PUES AQUI TE LE DECLARAS
+              </p>
+            </div>
+            <!--/ final -->
           </div>
-          <!--/ final -->
+          <!--/ step3 -->
         </div>
         <!--/ main content -->
 
@@ -379,6 +440,12 @@
         return check;
       };
 
+      function goToNextStep(target) {
+        var $target = $('#' + target);
+        $target.show();
+        $("html, body").animate({ scrollTop: $target.offset().top }, 1000);
+      }
+
       $('.myCarousel').carousel({
         interval: 8000, // in milliseconds
         pause: true
@@ -405,10 +472,10 @@
 
       $('#vamoaver').click(function(e) {
         e.preventDefault();
-        $('#main_container').show();
         $('#nelson').html('¡ya dijiste si! :D');
-        $("html, body").animate({ scrollTop: $('#main_container').offset().top }, 1000);
+        goToNextStep('main_container');
       });
+
     </script>
   </body>
 </html>
