@@ -413,9 +413,8 @@
     <script type="text/javascript">
 
       $(document).ready(function() {
-        if(true || !mobilecheck()) {
-          //init();
-          $('#site_content').show();
+        if(!mobilecheck()) {
+          init();
         } else {
           alert('This site is not accessible for mobile devices, please use a computer.');
         }
