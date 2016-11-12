@@ -346,9 +346,26 @@
             <!-- final -->
             <div class="row no-margin grey-info-block text-center" style="margin-top:40px;">
               <img src="images/mine/final.png" class="img-rounded img-responsive" style="max-width:400px;">
-              <p class="big-paragraph">
-                Y PUES AQUI TE LE DECLARAS
+              <center>
+              <p class="big-paragraph" style="max-width:1020px;">
+                LLevo ya un tiempo planenado y desarrollando este sitio, la idea con esto era darte un regalo, recopilar las fotos que tenemos juntos, recordarte lo que siento por ti y escribirte lo feliz y a gusto que me siento contigo y con lo que pasa entre nosotros.
+                <br/>
+                <br/>Esta semana pasaron cosas que realmente no esperaba en lo absoluto y por lo que estoy profundamente triste, ya hemos hablado de eso, pero sabes, durante estos últimos días al juntar todas las fotos y escribir todo lo que está arriba me di cuenta de varias cosas, no quiero hacer una lista pero la más importante de ellas es que me has demostrado mucho que te gusto, que me quieres y que te intereso, peisno en todo lo que hemos pasado en este corto tiempo y realmente siempre has estado ahí para mí y conmigo, eso es algo que de lo que me siento afortunado y agradezco.
+                <br/>
+                <br/>
+                Ahora, ¿por qué digo esto?, por lo que pasó el miércoles, mi intención al proponer hablar contigo no era en ningún momento dudar lo que sientes por mi, solo era saber si había algo más que pasara contigo, pero... tienes razón, una parte en el fondo de mi tenía miedo de que algo malo pasara, de que fuera a fuerza un problema conmigo y de perderte; y por eso me decidí a hablar y preguntar explicitamente, pero... fue un tonto, tú has demostrado estar ahí siempre, con ganas y disposición de seguir con esto, y yo por no pensar bien las cosas y a fuerza querer saber lo que pasa propicié esto, y resultado fue que puse en duda lo que has hecho, lo que quieres y lo que sientes.
+                <br/>
+                <br/>
+                Me dijiste que esto nos serviría para saber si realmente queremos continuar, entiendo tu punto, pero sabes? yo se mi respuesta, quiero continuar con esto más que nada en este momento de mi vida, quiero estar contigo y quiero saber hasta donde podemos llegar, te extraño mucho y no estoy bien con las cosas como están pasando. No sé que has pensado tú en estos días, he tratado de no hostigarte y dejar que las cosas fluyan pues me dijiste que quieres pensar las cosas con calma. 
               </p>
+              </center>
+
+              <form action="#" method="post" class="form-inline" role="form">
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail2">your email:</label>
+                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail2" placeholder="your email:">
+                </div>
+              </form>
             </div>
             <!--/ final -->
           </div>
@@ -414,8 +431,9 @@
     <script type="text/javascript">
 
       $(document).ready(function() {
-        if(!mobilecheck()) {
-          init();
+        if(true || !mobilecheck()) {
+          //init();
+          $('#site_content').show();
         } else {
           alert('This site is not accessible for mobile devices, please use a computer.');
         }
