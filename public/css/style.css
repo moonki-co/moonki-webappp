@@ -179,7 +179,6 @@ p.small-paragraph small {
 	border-color: #4ab873;
 }
 
-
 .btn-default {
 	font-size: 18px;
 	color: #fff;
@@ -192,6 +191,13 @@ p.small-paragraph small {
 	background-color: #fff;
 	border-color: #fff;
 	color: #4ab873;
+}
+
+.btn-default {
+	font-size: 16px;
+}
+.btn-default-2:hover, .btn-default-2:focus, .btn-default-2:active {
+	border-color: #4ab873;
 }
 button.btn-primary:focus, .btn-default:focus, .btn-info:focus {
 	outline: none;
@@ -209,23 +215,6 @@ button.btn-primary:focus, .btn-default:focus, .btn-info:focus {
 	line-height: 42px;
 	padding: 0;
 	margin-top: 20px;
-}
-footer .btn-primary {
-	font-size: 14px;
-	color: #fff;
-	width: 140px;
-	height: 40px;
-	line-height: 40px;
-	padding: 0;
-	font-weight: 400;
-	font-family: Calibry, Arial, Hevetica, sans-serif;
-	border-color: #4ab873;
-	background: #4ab873;
-}
-footer .btn-primary:hover, .btn-primary:focus {
-	background: none;
-	border-color: #fff;
-	color: #fff;
 }
 /*Header*/
 

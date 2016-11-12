@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "stop":  "forever stop index.js"
+    "stop": "forever stop index.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,8 @@
     "mongoose": "^4.3.3",
     "q": "^1.4.1",
     "cors": "^2.7.1",
-    "time": "^0.11.4"
+    "time": "^0.11.4",
+    "request": "^2.78.0"
   },
   "license": "private"
 }
