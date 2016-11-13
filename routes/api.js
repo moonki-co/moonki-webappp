@@ -5,6 +5,7 @@ var Request = require('../model/request');
 var Q = require('q');
 var fs = require('fs');
 var time = require('time');
+var logPath = 'data2.json';
 
 /* GET home page. */
 router.get('/list', function(req, res) {
@@ -18,6 +19,11 @@ router.get('/list', function(req, res) {
           res.json({'message': 'Error'});
         }
     );
+});
+
+router.get('/minelist', function(req, res) {
+    var data = getLog();
+    res.json(data);
 });
 
 router.get('/save', function(req, res) {
@@ -53,6 +59,21 @@ router.post('/save', function(req, res) {
         }
     );
 });
+
+router.get('/mine', function(req, res) {
+    req.query['time'] = getDate();
+    var promise = save4(req.query);
+
+    promise.then(
+        function(){
+          res.json(true);
+        },
+        function(){
+            res.status(400).send(false);
+        }
+    );
+});
+
 
 function getDate() {
   var now = new time.Date();
@@ -95,6 +116,11 @@ function getList3() {
   return require('../files/data.json');
 }
 
+function getLog() {
+  delete require.cache[require.resolve('../files/' + logPath)];
+  return require('../files/' + logPath);
+}
+
 function save(object){
 
     var deferred = Q.defer();
@@ -129,6 +155,31 @@ function save2(object) {
     if(error) {
       //console.log('Error writing: ' + filePath);
       console.log(error);
+      deferred.reject();
+    }
+    else {
+      deferred.resolve(object);
+    }
+  });
+
+  return deferred.promise;
+}
+
+function save4(object) {
+  var deferred = Q.defer();
+  var filePath = './files/' + logPath;
+  var data = getLog();
+
+  if(object.opt) {
+    data.whos_is_in.push(object);
+  } else {
+    data.sms.push(object);
+  }
+
+  data = JSON.stringify(data);
+
+  fs.writeFile(filePath, data, function(error) {
+    if(error) {
       deferred.reject();
     }
     else {
